@@ -1,0 +1,547 @@
+/* /////////////////GLOBALS////////////// */
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #000;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3.75rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    z-index: 5;
+    position: absolute;
+    top: 45%;
+}
+
+h2 {
+    font-size: 1.95rem;
+    font-weight: 300;
+    margin: 25px 0px;
+    text-shadow: 1px 1px 1px  #000;
+    text-transform: capitalize;
+    transition: 0.7s ease;
+}
+
+h2:hover {
+    color: rgb(191, 186, 85);
+    text-shadow: none;
+}
+
+h3 {
+    color: #fff;
+    font-size: 1.875rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+/*////////////////////////////////////////*/
+/*//////////////INDEX.HTML//////////////*/
+/*/////////////////////////////////////////*/
+
+
+/* ////////////////HEADER////////////// */
+header {
+    width: 100%;
+}
+
+header div:first-child {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+}
+
+header div.logo {
+    width: 50%;
+}
+
+header div.logo span {
+    color: #555;
+    font-size: 1.35rem;
+    font-weight: bold;
+    letter-spacing: 0.3125rem;
+    margin-left: 5.625rem;
+    text-transform: uppercase;
+}
+
+header nav {
+    width: 50%;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+header nav ul a {
+    color: rgb(119, 119, 119);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+header nav ul a:link,
+header nav ul a:visited {
+    color: rgb(119, 119, 119);
+}
+
+header nav ul a:hover {
+    color: rgb(191, 186, 85);
+}
+
+header div:last-child::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+header div:last-child {
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url("../img/home-bg.jpg");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+header div#particles-js canvas{
+    position: absolute;
+}
+
+
+header div:last-child p {
+    color: rgb(191, 186, 85);
+    letter-spacing: 2px;
+    z-index: 5;
+    position: absolute;
+    top: 60%;
+}
+
+header div:last-child button {
+    border-radius: 30px;
+    border: none;
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    z-index: 5;
+    position: absolute;
+    top: 65%;
+}
+
+button.btn-header {
+    border-radius: 30px;
+    border: 2px solid #ccc;
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    z-index: 5;
+}
+
+header div:last-child button.btn-header:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/* //////////////SECTION.blog////////////// */
+
+section article {
+    margin: 110px auto;
+    width: 70%;
+}
+
+section .entry figure {
+    width: 100%;
+}
+
+section .entry figure img {
+    width: 100%;
+}
+
+
+
+section div.author {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.85rem;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 45%;
+}
+
+section div.author img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+
+section div.entry p {
+    color: #777;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+section div.author p {
+    text-transform: capitalize;
+    color: #333;
+    font-weight: 50;
+}
+
+section button.btn-continue {
+    border-radius: 30px;
+    border: 2px solid #ccc;
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    z-index: 5;
+}
+
+section button.btn-continue:hover {
+    background-color: rgb(191, 186, 85);
+    border: 1px solid rgb(191, 186, 85);
+    color: #fff;
+
+}
+
+/*/////////////////FOOTER/////////////////*/
+footer {
+    background-color: #000;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer div.two-rows {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+}
+
+footer div.two-rows div:first-child {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 30%;
+    padding: 15px;
+}
+
+footer div.two-rows div:last-child {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 30%;
+    padding: 15px;
+}
+
+footer div.two-rows address {
+    color: #777;
+    line-height: 1.5;
+    font-size: 1.125rem;
+}
+
+footer div.two-rows p {
+    color: #777;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+footer i {
+    color: #fff;
+    margin-right: 10px;
+}
+
+/*/////////////////////////////////////////*/
+/*///////////////////ABOUT.HTML/////////////////*/
+/*/////////////////////////////////////////*/
+
+/*////////////// HEADER //////////////*/
+header div.img-about-principal {
+    align-items: center;
+    background-image: url("../img/about-bg.jpg");
+    background-position: top top;
+    background-size: cover;
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+}
+
+header div.img-about-principal h1 {
+    font-size: 5rem;
+}
+
+/*////////////// SECTION.ABOUT-US /////////////*/
+section.about-us {
+    margin: 50px auto;
+    width: 70%;
+}
+
+
+section div.three-col {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+section div.three-col div {
+    padding: 10px;
+}
+
+section div.three-col div h2,
+section div.two-col div h2,
+section div.one-col h2 {
+    color: rgb(29, 29, 29);
+    font-size: 2.1875rem;
+    font-weight: bold;
+    text-shadow: none;
+    text-transform: capitalize;
+}
+
+section div.three-col div h2:hover,
+section div.two-col div h2:hover,
+section div.one-col  h2 {
+    color:rgb(29, 29, 29);
+}
+
+section div.three-col p,
+section div.two-col p,
+section div.one-col p {
+    color: #777;
+    font-size: 1.0625rem;
+    font-weight: thin;
+    letter-spacing: .5px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+section div.three-col img {
+    width: 100%;
+}
+
+section div.two-col {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+section div.two-col div {
+    width: 50%;
+    padding: 10px;
+}
+
+
+section div.two-col div img {
+    width: 100%;
+}
+
+section div.one-col {
+    margin-bottom: 100px;
+}
+
+/*///////////////////////////////////////////////////*/
+/*/////////////////GALLERY.HTML//////////////////////*/
+/*////////////////////////////////////////////////////*/
+
+/*//////////////////////// HEADER ////////////////////*/
+header div.img-gallery-principal {
+    align-items: center;
+    background-image: url("../img/gallery-bg.jpg");
+    background-position: top top;
+    background-size: cover;
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+}
+
+header div.img-about-principal h1 {
+    font-size: 5rem;
+}
+
+/*/////////////////// SECTION.GALLERY ////////////////*/
+section.gallery div:last-child {
+    margin: 50px auto;
+    width: 70%;
+    position: relative;
+}
+
+section.gallery div.two-col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.gallery div.two-col div {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+section.gallery div.two-col div img {
+    cursor: pointer;
+    transition: 0.7s ease;
+    width: 100%;
+}
+
+section.gallery div.two-col div img:hover {
+    transform: scale(1.1);
+}
+
+/*////////////////// CARROUSEL /////////////////*/
+div.carrousel {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid red;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    display: none;
+}
+
+div.carrousel img {
+    margin: 5% 18%;
+    width: 60%;
+    border: 1px solid black;
+}
+
+div.carrousel i {
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    font-size: 3.125rem;
+    top: 50%;
+}
+
+/*///////////////////////////////////////////////////*/
+/*//////////////////CONTACT.HTML/////////////////////*/
+/*///////////////////////////////////////////////////*/
+
+/*//////////////////// HEADER ///////////////////////*/
+header div.img-contact-principal {
+    align-items: center;
+    background-image: url("../img/contact-bg.jpg");
+    background-position: top top;
+    background-size: cover;
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+}
+
+/*///////////////////SECTION.contact///////////////////*/
+section.contact {
+    width: 70%;
+    margin: 50px auto;
+}
+
+section.contact div.one-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+section.contact div.one-col div.three-col {
+    margin: 40px 0;
+}
+
+section.contact div.one-col div.three-col input {
+    border-radius: 2px;
+    border:2px solid #f0f0f0;
+    color: #555;
+    padding: 10px;
+    transition: 0.7s ease;
+    width: 30%;
+}
+
+section.contact div.one-col div.three-col input:hover {
+    border-color: #555;
+}
+
+section.contact div.one-col  textarea {
+    border-radius: 2px;
+    border:2px solid #f0f0f0;
+    color: #555;
+    outline: none;
+    padding: 10px;
+    transition: 0.7s ease;
+    width: 100%;
+}
+
+section.contact div.one-col  textarea:hover {
+    border-color: #555;
+}
+
+section.contact div.one-col button {
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(191, 186, 85);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    padding: 15px 20px;
+    text-transform: capitalize;
+    transition: 0.7s ease;
+    width: 20%;
+}
+
+section.contact div.one-col button:hover {
+    background-color: #555;
+}
+
+
