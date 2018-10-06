@@ -252,11 +252,11 @@ section button.btn-continue:hover {
 /*/////////////////FOOTER/////////////////*/
 footer {
     background-color: #000;
-    height: 60vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 50vh;
 }
 
 footer div.two-rows {
@@ -267,22 +267,26 @@ footer div.two-rows {
 
 footer div.two-rows div:first-child {
     width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-top: 30%;
+    display: flex;   
+    flex-direction: column; 
     padding: 15px;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+footer div.two-rows div div.wraper {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 40px;
 }
 
 footer div.two-rows div:last-child {
     width: 50%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex-direction: column;
-    margin-top: 30%;
     padding: 15px;
+    height: 100%;
+    justify-content: flex-start;
 }
 
 footer div.two-rows address {
